@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f57c6f, #854b4b);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 60vh;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2rem;
+}
+
+#stopwatch {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 15px;
+    color: rgb(255, 255, 131);
+    background: linear-gradient(145deg, #8c1010, #cd3030);
+    box-shadow: 10px 10px 20px #b0b0b0, -10px -10px 20px #ffffff;
+    margin-bottom: 40px;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #007bff, #0460c1);
+    color: #ffffff;
+    
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #0056b3, #004080);
+}
+
+button:active {
+    box-shadow: inset 10px 10px 20px #0056b3, inset -10px -10px 20px #007bff;
+    background: linear-gradient(145deg, #004080, #0056b3);
+}
+@media (max-width: 700px) {
+    .main {
+      width: 90vw;
+      height: auto;
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+  
+    #stopwatch {
+      font-size: 3.5rem;
+      padding: 15px 30px;
+      margin-bottom: 30px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  
+    .controls {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
